@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+    <script src="index.js" defer></script>
+
+    <title>Student Registration System</title>
+</head>
+<body style="background-image: url(https://lumenlearning.com/wp-content/uploads/2017/04/Why-Were-Effective_color_resize.jpg)" class="font-mono ">
+
+    <div class="max-h-screen overflow-y-auto border-1 p-4">
+        <!-- Heading of the WebPage -->
+        <h1 class="text-3xl pt-12 text-teal-400 pl-12 fas fa-user-plus"> Student Enrollment Form </h1>
+
+        <div class="flex">
+
+            <div class="p-4 flex justify-start pl-10">
+                <div class="container-form bg-gradient-to-tl from-blue-400 to-pink-400 hover:bg-gradient-to-t hover:from-blue-600 hover:to-pink-600 p-10 border-2 shadow-black border-black rounded-xl flex justify-start items-start w-[50vmin]">
+                    
+                    <!-- Starting of the Registration Form -->
+
+                    <form id="form" class="flex flex-col gap-2 w-full">
+                        <label for="sname">Student Name:</label>
+                        <input type="text" id="sname" name="sname" class="field" required>
+            
+                        <label for="sid">Admission Number:</label>
+                        <input type="number" id="sid" name="sid" class="field" required>
+            
+                        <label for="sclass">Class:</label>
+                        <input type="number" id="sclass" name="sclass" class="field" required>
+            
+                        <label for="ssec">Section:</label>
+                        <input type="text" id="ssec" name="ssec" class="field" required>
+            
+                        <label for="srn">Roll Number:</label>
+                        <input type="number" id="srn" name="srn" class="field" required>
+            
+                        <label for="seid">Email ID:</label>
+                        <input type="email" id="seid" name="seid" class="field" required>
+            
+                        <label for="scn">Contact Number:</label>
+                        <input type="number" id="scn" name="scn" class="field" required>
+            
+                        <div id="btndiv" class="flex justify-center">
+                            <button id="btn" type="submit" class="bg-gradient-to-br from-blue-400 to-pink-200 hover:bg-gradient-to-br hover:from-pink-400 hover:to-blue-600 py-2 px-4 rounded-lg mt-4">Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- Description of the Webpage -->
+
+            <div class="flex items-center justify-center h-screen">
+                <div class="text-white font-mono p-5 flex flex-col-reverse items-center">
+                    <p class="text-center text-2xl">Enroll here for a better Future.</p><br>
+                    <p class="text-center text-md">We will contact you through your Mobile Number and Email. So please share valid(working) Contact info.</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Registered Student Details Table -->
+
+        <div class="container-details flex justify-center">
+            <table class="border-black border-2 bg-gradient-to-t from-blue-300 to-pink-200 rounded-lg p-10 w-[90%]">
+                <thead>
+                    <tr>
+                        <th class="tablefield">Student Name</th>
+                        <th class="tablefield">Admission Number</th>
+                        <th class="tablefield">Class</th>
+                        <th class="tablefield">Section</th>
+                        <th class="tablefield">Roll Number</th>
+                        <th class="tablefield">Email ID</th>
+                        <th class="tablefield">Contact Number</th>
+                        <th class="tablefield">Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Rows will be added dynamically -->
+                    <!-- Rows contain data of registered Students -->
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+</body>
+</html>
+
